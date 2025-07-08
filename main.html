@@ -22,10 +22,19 @@
         </div>
 
         <div id="functions">
-            <h2>Vector Addition</h2>
-            <button id="calcAdd">Calculate</button>
-            <ol id="vSum">
-            </ol>
+            <div id="addition">
+                <h2>Vector Addition</h2>
+                <button id="calcAdd">Calculate</button>
+                <ol id="vSum">
+                </ol>
+            </div>
+            <div id="scMult">
+                <h2>Scalar Multiplication</h2>
+                <input type="number" placeholder="Enter scalar value" id="vScMult">
+                <label for="vChoice">Choose a vector to multiply:</label>
+                <select name="vChoice" id="vChoice"></select>
+                <button id="calcScMult">Calculate</button>
+            </div>
         </div>
     </body>
     <script src="script.js"></script>
