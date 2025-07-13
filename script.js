@@ -28,11 +28,19 @@ const addButtonTwo = document.getElementById("vTwoOut");
 const vectorAdditionButton = document.getElementById("calcAdd");
     //Scalar Multiplication Button
 const scalarMultButton = document.getElementById("calcScMult");
+    //Dot Product
+const dotProdButton = document.getElementById("calcDotProd");
 
+    //Lists
+    //Vector Lists
 const listOne = document.getElementById("vOne");
 const listTwo = document.getElementById("vTwo");
+    //Vector Sum
 const vectorAdditionList = document.getElementById("vSum");
+    //Scalar Mult
 const scalarMultiplicationList = document.getElementById("vSM");
+    //Vector Dot Multiplication
+const dotMultList = document.getElementById("vDP");
 
 
 //Declare arrays to be used as vectors
@@ -145,9 +153,14 @@ const fullSM = () =>{
     });
 }
 
+//Placeholder
+
+const placeholder = () =>{console.log("Placeholder");}
+
 //Event Listeners
 
 addButtonOne.addEventListener("click", () => {collecto(inOne, listOne, v1, "v1")});
 addButtonTwo.addEventListener("click", () => {collecto(inTwo, listTwo, v2, "v2")});
 vectorAdditionButton.addEventListener("click", () => add(v1,v2));
 scalarMultButton.addEventListener("click", () => fullSM());
+dotProdButton.addEventListener("click", ()=>placeholder());
