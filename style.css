@@ -1,3 +1,5 @@
 .enter{
-    color:lime
+    color:lime;
+    display:inline-block;
+    text-align:center;
 }
